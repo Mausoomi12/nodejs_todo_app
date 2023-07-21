@@ -4,7 +4,7 @@ import taskRouter from "./routes/task.js";
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import { errorMiddleWare } from "./middlewares/error.js";
-const cors =require('cors')
+import cors from "cors";
 
 
 export const app = express();
