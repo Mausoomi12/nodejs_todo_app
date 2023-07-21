@@ -50,7 +50,7 @@ import userRouter from "./routes/user.js";
 import taskRouter from "./routes/task.js";
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
-import { errorMiddleware } from "./middlewares/error.js";
+import { errorMiddleWare } from "./middlewares/error.js";
 import cors from "cors";
 
 export const app = express();
@@ -79,4 +79,4 @@ app.get("/", (req, res) => {
 });
 
 // Using Error Middleware
-app.use(errorMiddleware);
+app.use(errorMiddleWare);
